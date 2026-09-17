@@ -1,8 +1,24 @@
+\subsection*{Technical Leadership and Industry-grade Open-source GPU Software}
 
+\myExpOne
+{
+\item Contributed kernel replay profiling feature (8K+ LOC) upstream to the open-source ROCm profiling ecosystem.
+\item Developing and enhancing key areas of profiling for today’s workloads, e.g., always-on profiling, AI-assisted profiling tools, for ROCm ecosystem. 
+\item Working with application team stakeholders, e.g., AI, HPC/Scientific Computing, to translate real application workload bottlenecks into tooling requirements.
+\item Working with GPU architecture teams to align profiling capability with hardware counter and tracing support.
+\item Leading cross-functional collaboration across research, testing/QA, data center GPU validation, to ensure success of product deployment for exascale supercomputing and rack-scale AI infrastructure. 
+\item Engaging in open-source GPU software initiatives and standardization efforts,building on prior technical leadership on Kokkos, C++, HPSF, LLVM, LDMS and MPI+OpenMP standards.
+}
 
+\textbf{Advanced Micro Devices (AMD)}\\
+{Principal Member of Technical Staff} \hfill \textit{June 2026 - Present}
+%\vspace{-0.02in}
+\noindent
+\begin{itemize}[itemsep=-0.1em]\onlyitems[include={1,2}]
+\myExpOne
+\end{itemize}
 
-
-\newcommand{\myExpOne}{
+\newcommand{\myExpTwo}{
 \item Software design and implementation for tools for distributed GPU programming with Kokkos, specifically (1) inter-process profiling and adaptivity via PMPI and (2) job-level monitoring and feedback via LDMS and DCGM.
 \item Augmenting Kokkos Tools runtime auto-tuning via low-level metrics from, e.g., PAPI, CUPTI, instead of timings, reducing time to converge to optimal Kokkos tuning parameters by 32\%.
 \item Developing energy-aware optimization for Kokkos via NVML, achieving 4x energy reduction.
@@ -11,17 +27,16 @@
 \item Research and pathfinding on the use of AI chips with dataflow architectures, e.g., Cerebras WSE-3, for science simulations.
 }
 
-\subsection*{Technical Leadership and Industry-grade Open-source HPC Software}
 \textbf{Sandia National Laboratories}\\
-{Principal Member of Technical Staff II} \hfill \textit{July 2024 - Present}
+{Principal Member of Technical Staff II} \hfill \textit{July 2024 - May 2026}
 %\vspace{-0.02in}
 \noindent
 \begin{itemize}[itemsep=-0.1em]\onlyitems[include={1,2}]
-\myExpOne
+\myExpTwo
 \end{itemize}
 
 
-\newcommand{\myExpTwo}{
+\newcommand{\myExpThree}{
 \item Developed and maintained Kokkos Tools for the CMake build system, low tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
 \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop.
 \item Implemented 5 new loop transformation features in LLVM OpenMP, leading to a 1.7x speedup for a Kokkos-OpenMP+CUDA benchmark using the index set split construct, 3 accepted OpenMP 6.0 features, and 11 feature proposals in OpenMP 7.0.
@@ -32,10 +47,10 @@
 {Senior Member of Technical Staff} \hfill \textit{August 2022 - July 2024}
 %\vspace{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
-\myExpTwo 
+\myExpThree
 \end{itemize}
 
-\newcommand{\myExpThree}{
+\newcommand{\myExpFour}{
   % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
    \item Implemented OpenMP user-defined multi-GPU scheduling for LLVM, offering 2.1x speedup over using MPI parallelization, leading to papers at IWOMP 2020 and BCB 2021.
    \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that achieved a 1.2x speedup, leading to a paper at SC22's HiPar workshop. 
@@ -48,12 +63,12 @@
 \textbf{Brookhaven National Laboratory}\hfill
 {Assistant Computational Scientist} \hfill \textit{May 2019 - August 2022}
 \begin{itemize}[itemsep=-0.1em]
-\myExpThree
+\myExpFour
 \end{itemize}
 
 
 \subsection*{HPC Software Development and Performance Engineering}
-\newcommand{\myExpFour}{
+\newcommand{\myExpFive}{
 \item Implemented User-defined Loop Schedules (UDS) for OpenMP and RAJA via a prototype library for LLVM and GCC, leading to a paper at IWOMP 2018 and 3 github PRs merged in Charm++. 
 \item Performance analysis and optimization of MPI+CUDA scientific applications on NVIDIA GPUs via CUPTI and auto-tuning, leading to 1.4x speedup of an application for computer chip design.
 \item Developed novel and efficient multi-level loop schedulers in Charm++, leading to a 1.2x speedup on the PRK particle-in-cell benchmark code and a Best Poster Candidate at SC18.
@@ -64,11 +79,11 @@
 {Software Engineer} \hfill \textit{Dec 2015 - May 2019}
 \vspace{-0.0in}
 \begin{itemize}[itemsep=-0.1em]
-\myExpFour
+\myExpFive
 \end{itemize}
 
 \comments{
-\newcommand{\myExpFive}{
+\newcommand{\myExpSix}{
 \item Performance analysis and optimization of 3-D image reconstruction application on NVIDIA GPUs via CUPTI and auto-tuning, leading to a performance-enhanced CUDA version of the application. 
 \item Developed tuning support for coordinated loop scheduling and load balancing in Charm++, leading to a 1.2x speedup on a particle-in-cell benchmark code and a Best Poster Candidate at SC18.
 }
@@ -77,11 +92,11 @@
 \textbf{USC - Information Sciences Institute}\hfill
 \textit{Computer Scientist} \hfill \textit{Dec 2016 - May 2018}
 \begin{itemize}[itemsep=-0.1em]
-\myExpFive
+\myExpSix
 \end{itemize}
 
 % accomplished x as measured by y, by doing z 
-\newcommand{\myExpSix}{
+\newcommand{\myExpSeven}{
 \item Extended Charm++ to offer a novel runtime system capability of coordinating inter-node load balancing and intra-node loop scheduling, leading to 2 github PRs merged in Charm++.
 }
 \noindent
@@ -89,7 +104,7 @@
 \textit{Software Developer} \hfill \textit{Jan 2016 - Dec 2016} 
 %\vspace*{-0.02in}
 \begin{itemize}
-\myExpSix
+\myExpSeven
 \end{itemize} 
 \noindent
 \textbf{University of Illinois}\hfill
